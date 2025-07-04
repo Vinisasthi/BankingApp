@@ -18,7 +18,7 @@ pipeline {
                 //git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
             }
 		}
-        stage('Maven Build') {
+        stage('Maven Application Build') {
             steps {
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
